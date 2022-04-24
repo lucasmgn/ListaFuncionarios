@@ -8,7 +8,7 @@ public class Conexao{
 	public static Connection getConnection() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			return DriverManager.getConnection("jdbc:mysql://localhost/lista_funcionarios", "root", "auhpuk260202");
+			return DriverManager.getConnection("jdbc:mysql://localhost/lista_funcionarios", "root", "senhaBD");
 		}catch(Exception e) {
 			throw new RuntimeException("Erro, recuperando conexão com o banco", e);
 		}
